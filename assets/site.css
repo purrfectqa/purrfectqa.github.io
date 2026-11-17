@@ -225,13 +225,14 @@ h1 em, h2 em { color: var(--rust); }
   font-size: clamp(1.12rem, 1.65vw, 1.33rem);
 }
 
-.hero-actions {
+.hero-actions, .contact-links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.65rem 1.55rem;
-  margin-top: 1.85rem;
 }
+
+.hero-actions { margin-top: 1.85rem; }
 
 .button, .text-link {
   font-size: 1.02rem;
@@ -566,8 +567,8 @@ dd { color: var(--muted); }
 .contact h2 { text-wrap: balance; }
 
 .closing h2 + p { margin-top: 0.85rem; }
-.closing p + p, .closing .button { margin-top: 0.8rem; }
-.closing .button { margin-top: 1.15rem; }
+.closing p + p { margin-top: 0.8rem; }
+.contact-links { margin-top: 1.15rem; }
 .role { font-weight: 650; }
 .bio-meta {
   color: var(--muted);
