@@ -589,6 +589,7 @@ dd { color: var(--muted); }
 }
 
 .site-footer .text-link { font-size: inherit; }
+.registration { white-space: nowrap; }
 
 @media (max-width: 68rem) {
   .section-opening h2 { max-width: 16ch; }
@@ -656,6 +657,9 @@ dd { color: var(--muted); }
     border-bottom: 1px solid var(--line);
   }
   .closing .contact { padding: 1.6rem 0 0; }
+
+  .site-footer { display: grid; gap: 0.15rem; }
+  .site-footer .text-link { justify-self: start; }
 }
 
 @media (max-width: 23rem) {
