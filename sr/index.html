@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nezavisno testiranje veb aplikacija, plaćanja i integracija. Revizija kritičnih tokova i provera transakcija pred izdavanje.">
+  <meta name="theme-color" content="#f7f3ea">
+  <title>Purrfect QA — Nezavisni QA konsalting | Tatiana Kashitsyna</title>
+  <link rel="canonical" href="https://purrfectqa.github.io/sr/">
+  <link rel="alternate" hreflang="en" href="https://purrfectqa.github.io/">
+  <link rel="alternate" hreflang="sr-Latn" href="https://purrfectqa.github.io/sr/">
+  <link rel="alternate" hreflang="x-default" href="https://purrfectqa.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Purrfect QA">
+  <meta property="og:title" content="Purrfect QA — Nezavisni QA konsalting | Tatiana Kashitsyna">
+  <meta property="og:description" content="Nezavisno testiranje veb aplikacija, plaćanja i integracija. Revizija kritičnih tokova i provera transakcija pred izdavanje.">
+  <meta property="og:url" content="https://purrfectqa.github.io/sr/">
+  <meta property="og:image" content="https://purrfectqa.github.io/assets/share-sr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Purrfect QA i primer toka transakcije">
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Pređi na sadržaj</a>
+  <header class="site-header frame">
+    <a class="brand" href="../"><span class="mark" aria-hidden="true"></span>Purrfect<span class="wordmark-qa">QA</span></a>
+    <p class="header-tag">Nezavisni QA konsalting</p>
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <a href="#services">Usluge</a>
+      <a href="#sample">Primer izveštaja</a>
+      <a href="#about">O meni</a>
+    </nav>
+    <nav class="languages" aria-label="Jezik">
+      <a href="../" hreflang="en" lang="en" aria-label="English">EN</a>
+      <span aria-hidden="true">/</span>
+      <a href="./" hreflang="sr-Latn" lang="sr-Latn" aria-label="Srpski" aria-current="page">SR</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-lead">Kad sve ide po planu, vaš proizvod radi.</p>
+        <h1 id="hero-title">Šta se desi <em>kad nešto pođe po&nbsp;zlu?</em></h1>
+        <p class="hero-intro">Testiram tokove u kojima greška najviše košta. Saznajte gde nastaju problemi i šta treba popraviti pre izdavanja.</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Razgovarajmo o projektu <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#sample">Pogledajte primer nalaza <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="trace">
+        <figcaption class="trace-cap">
+          <span class="eyebrow">Tok transakcije <span aria-hidden="true">/</span> PAY-01</span>
+          <span class="trace-demo">Fiktivni primer</span>
+        </figcaption>
+        <div class="trace-body">
+          <p class="trace-title">Plaćanje pretplate</p>
+          <ol class="trace-events">
+            <li>
+              <time>09:41:02</time>
+              <span class="trace-dot neutral" aria-hidden="true"></span>
+              <span class="trace-actor">Stranica za plaćanje</span>
+              <span class="trace-status neutral">Poslato</span>
+            </li>
+            <li>
+              <time>09:41:04</time>
+              <span class="trace-dot settled" aria-hidden="true"></span>
+              <span class="trace-actor">Pružalac usluge plaćanja</span>
+              <span class="trace-status settled">Odobreno</span>
+            </li>
+            <li>
+              <time>09:41:32</time>
+              <span class="trace-dot neutral" aria-hidden="true"></span>
+              <span class="trace-actor">Serverski deo</span>
+              <span class="trace-status neutral">Na čekanju</span>
+            </li>
+            <li>
+              <time>09:41:32</time>
+              <span class="trace-dot flagged" aria-hidden="true"></span>
+              <span class="trace-actor">Korisnički interfejs</span>
+              <span class="trace-status flagged">Vreme isteklo</span>
+            </li>
+          </ol>
+        </div>
+        <div class="trace-result">
+          <strong>Neusaglašeni statusi</strong>
+          <span>Pružalac usluge je odobrio plaćanje. Aplikacija traži od korisnika da pokuša ponovo.</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="services frame" id="services" aria-labelledby="services-title">
+      <div class="section-opening">
+        <div>
+          <p class="eyebrow">Usluge</p>
+          <h2 id="services-title">Provera <em>kritičnih tokova.</em></h2>
+        </div>
+        <p>Svaka provera polazi od jednog poslovnog rizika i obima koji unapred dogovaramo. Dobijate pregled onoga što je testirano i redosled kojim vredi rešavati probleme.</p>
+      </div>
+      <div class="offers">
+        <article class="offer">
+          <div class="offer-meta">
+            <span class="eyebrow">Spremnost za izdavanje</span>
+            <span class="turnaround">3–5 radnih dana</span>
+          </div>
+          <h3>Provera kritičnih tokova</h3>
+          <p class="offer-lead">Uvodite novi proces registracije ili menjate ključnu funkciju? Proveravam šta se dešava kada korisnici prekinu tok, ponove radnju ili unesu neočekivane podatke.</p>
+          <dl>
+            <div><dt>Obim</dt><dd>Jedna veb aplikacija, do dva povezana korisnička toka, jedna uloga, jedno okruženje i jedan pregledač.</dd></div>
+            <div><dt>Šta dobijate</dt><dd>Prijave grešaka sa koracima za reprodukciju, pregled pokrivenosti i kratak izveštaj o rizicima pred izdavanje.</dd></div>
+          </dl>
+          <a class="text-link" href="#contact">Razgovarajmo o proveri pred izdavanje <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="offer">
+          <div class="offer-meta">
+            <span class="eyebrow">Plaćanja i naplata</span>
+            <span class="turnaround">5–10 radnih dana</span>
+          </div>
+          <h3>Provera toka transakcije</h3>
+          <p class="offer-lead">Uvodite novog pružaoca usluga plaćanja ili menjate naplatu? Proveravam da li se status prikazan korisniku poklapa sa statusom na serveru i kod pružaoca usluge.</p>
+          <dl>
+            <div><dt>Obim</dt><dd>Jedan životni ciklus transakcije u testnom okruženju. Uspešna i odbijena plaćanja, istek vremena i ponovni pokušaji, u meri u kojoj ih okruženje podržava.</dd></div>
+            <div><dt>Šta dobijate</dt><dd>Model stanja transakcije, dokazi o neusaglašenostima i lista rizika po prioritetu.</dd></div>
+          </dl>
+          <a class="text-link" href="#contact">Razgovarajmo o proveri plaćanja <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="sample" id="sample" aria-labelledby="sample-title">
+      <div class="sample-grid frame">
+        <div class="sample-copy">
+          <p class="eyebrow">Primer izveštaja</p>
+          <h2 id="sample-title">Nalaz koji vaš tim može da reprodukuje.</h2>
+          <p>Po isteku vremena za odgovor, uspešno plaćanje može da izgleda kao neuspešno. Izveštaj povezuje zabeležena stanja sa odlukom koju tim treba da donese.</p>
+          <p class="sample-note">Iz fiktivnog izveštaja o rizicima pri naplati pretplate.</p>
+        </div>
+        <article class="report" aria-labelledby="defect-title">
+          <div class="report-meta">
+            <span class="eyebrow">PAY-01 <span aria-hidden="true">/</span> Izveštaj o rizicima</span>
+            <span class="severity">Visok prioritet</span>
+          </div>
+          <h3 id="defect-title">Stranica nudi ponovni pokušaj posle odobrenog plaćanja.</h3>
+          <dl class="report-facts">
+            <div><dt>Uočeno</dt><dd>Pružalac usluge odobrava plaćanje. Dok potvrda ne stigne do servera, na stranici piše „Vreme za plaćanje je isteklo. Pokušajte ponovo.“</dd></div>
+            <div><dt>Rizik</dt><dd>Korisnik može da pokrene još jedno plaćanje dok aplikacija još obrađuje prvo.</dd></div>
+          </dl>
+          <details>
+            <summary>Koraci za reprodukciju i preporuka</summary>
+            <ol>
+              <li>U testnom okruženju pokrenite plaćanje pretplate.</li>
+              <li>Simulirajte odobrenje plaćanja i zadržite potvrdu kod pružaoca usluge dok na stranici za plaćanje ne istekne vreme za odgovor.</li>
+              <li>Pre nego što potvrda stigne, uporedite status kod pružaoca usluge, status na serveru i poruku na stranici za plaćanje.</li>
+            </ol>
+            <dl class="report-facts">
+              <div><dt>Očekivano ponašanje</dt><dd>Prikažite status „Na čekanju“ dok se ne potvrdi ishod plaćanja. Proverite postojeći pokušaj pre nego što korisniku ponudite novi.</dd></div>
+              <div><dt>Granice provere</dt><dd>U ovom primeru provera dvostruke naplate bila je van obima testiranja.</dd></div>
+            </dl>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <div class="closing frame">
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">O meni</p>
+        <h2 id="about-title">Tatiana Kashitsyna</h2>
+        <p class="role">Nezavisna senior QA konsultantkinja</p>
+        <p>Radila sam na bankarskim i fintech sistemima, uključujući migraciju centralnog bankarskog sistema na Temenos, kao i na SaaS proizvodima, API-jima i integracijama sa spoljnim sistemima. Direktno sarađujem sa produktnim i inženjerskim timovima, od dogovora o obimu provere do zajedničkog pregleda nalaza.</p>
+        <p class="bio-meta">U testiranju softvera od 2016. <span aria-hidden="true">/</span> Radim iz Srbije</p>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Šta <em>uskoro puštate u rad?</em></h2>
+        <p>Ukratko mi napišite šta se menja, kada planirate izdavanje i koji vas tok najviše brine. Dogovorićemo šta prvo treba proveriti.</p>
+        <a class="button" href="https://www.linkedin.com/in/panipanda/">Pišite mi na LinkedInu <span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer frame">
+    <span>Nezavisni QA konsalting · Srbija</span>
+    <a class="text-link" href="#top">Na vrh stranice <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
